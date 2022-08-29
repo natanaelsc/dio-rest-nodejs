@@ -1,0 +1,25 @@
+@baseUrl = http://localhost:3000
+
+### Get status
+GET {{baseUrl}}/status HTTP/1.1
+
+### Create a new user
+POST {{baseUrl}}/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "test",
+    "password": "test"
+}
+
+### Update the user
+PUT {{baseUrl}}/users/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "test",
+    "password": "test"
+}
+
+### Delete the user
+DELETE {{baseUrl}}/users/1 HTTP/1.1
